@@ -1,9 +1,18 @@
 import "../scss/main.scss";
+import Contents from "./ui/Contents";
+import Footer from "./ui/Footer";
+import Header from "./ui/Header";
+import SideBar from "./ui/SideBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">Grammar Cheet Sheet</header>
+      <Header />
+      <div>
+        <SideBar />
+        <Contents />
+      </div>
+      <Footer />
     </div>
   );
 }
