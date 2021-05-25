@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DEFAULT_LANGUAGES } from "./Const";
 import Contents from "./ui/Contents";
 import Footer from "./ui/Footer";
@@ -7,6 +7,15 @@ import SideBar from "./ui/SideBar";
 
 function App() {
   const [languages, setLanguages] = useState(DEFAULT_LANGUAGES);
+
+  const LANGUAGES_LS = "languages";
+
+  useEffect(() => {
+    console.log("Header mounted");
+    const localLanguages =
+      JSON.parse(localStorage.getItem(LANGUAGES_LS)) || DEFAULT_LANGUAGES;
+    setLanguages(localLanguages);
+  }, []);
 
   const url = "/python.md";
   fetch(url)
@@ -23,7 +32,7 @@ function App() {
       <Header languages={languages} setLanguages={setLanguages} />
       <div>
         <SideBar />
-        <Contents />
+        <Contents languages={languages} />
       </div>
       <Footer />
     </div>

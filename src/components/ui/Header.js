@@ -1,19 +1,21 @@
-import { Button } from "@material-ui/core";
-import React, { useEffect, useState } from "react";
-import { AVAILABLE_LANGUAGES, DEFAULT_LANGUAGES } from "../Const";
+import { Button, makeStyles } from "@material-ui/core";
+import React from "react";
+import { AVAILABLE_LANGUAGES } from "../Const";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+    },
+  },
+}));
+
+const LANGUAGES_LS = "languages";
 
 const Header = ({ languages, setLanguages }) => {
-  const LANGUAGES_LS = "languages";
-
-  useEffect(() => {
-    console.log("Header mounted");
-    const localLanguages =
-      JSON.parse(localStorage.getItem(LANGUAGES_LS)) || DEFAULT_LANGUAGES;
-    setLanguages(localLanguages);
-  }, []);
+  const classes = useStyles();
 
   function flip(language) {
-    console.log("clicked!!!", language);
     console.log(`${language} has clicked.`);
     var curLanguages = [...languages];
     if (languages.includes(language)) {
@@ -22,23 +24,26 @@ const Header = ({ languages, setLanguages }) => {
       curLanguages.push(language);
     }
     console.log("new", curLanguages);
+
+    localStorage.setItem(LANGUAGES_LS, JSON.stringify(curLanguages));
     setLanguages(curLanguages);
   }
 
   return (
     <header>
       <h1>Grammar Cheet Sheet</h1>
-
-      {AVAILABLE_LANGUAGES.map((language, i) => (
-        <Button
-          key={i}
-          color="primary"
-          variant={languages.includes(language) ? "contained" : "outlined"}
-          onClick={() => flip(language)}
-        >
-          {language}
-        </Button>
-      ))}
+      <div className={classes.root}>
+        {AVAILABLE_LANGUAGES.map((language, i) => (
+          <Button
+            key={i}
+            color="primary"
+            variant={languages.includes(language) ? "contained" : "outlined"}
+            onClick={() => flip(language)}
+          >
+            {language}
+          </Button>
+        ))}
+      </div>
     </header>
   );
 };

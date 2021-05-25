@@ -3,7 +3,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const Contents = () => {
+const Contents = ({ languages }) => {
   const codeStr = `if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--page", default=1, help="target pagenumber", type=int)
