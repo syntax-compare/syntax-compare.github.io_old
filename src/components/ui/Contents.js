@@ -1,3 +1,4 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -10,25 +11,36 @@ const Contents = () => {
     args = parser.parse_args() main(args)`;
 
   return (
-    <div className="contents">
-      <h4>category</h4>
-      <h4>python</h4>
-      <h4>kotlin</h4>
+    <>
+      <Grid container spacing={1}>
+        <Grid item xs={6}>
+          <h4>python</h4>
+        </Grid>
+        <Grid item xs={6}>
+          <h4>kotlin</h4>
+        </Grid>
+      </Grid>
 
-      <h4>for loop</h4>
-      <div className="code-item">
-        <SyntaxHighlighter language="python" style={darcula}>
-          {codeStr}
-        </SyntaxHighlighter>
-        <p>additional description</p>
-      </div>
-      <div className="code-item">
-        <SyntaxHighlighter language="python" style={darcula}>
-          {codeStr}
-        </SyntaxHighlighter>
-        <p>another description</p>
-      </div>
-    </div>
+      <h5>for loop</h5>
+      <Grid container spacing={1}>
+        <Grid item xs={6}>
+          <div>
+            <SyntaxHighlighter language="python" style={darcula}>
+              {codeStr}
+            </SyntaxHighlighter>
+            <p>additional description</p>
+          </div>
+        </Grid>
+        <Grid item xs={6}>
+          <div>
+            <SyntaxHighlighter language="python" style={darcula}>
+              {codeStr}
+            </SyntaxHighlighter>
+            <p>another description</p>
+          </div>
+        </Grid>
+      </Grid>
+    </>
   );
 };
 

@@ -1,4 +1,3 @@
-import "../scss/main.scss";
 import Contents from "./ui/Contents";
 import Footer from "./ui/Footer";
 import Header from "./ui/Header";
