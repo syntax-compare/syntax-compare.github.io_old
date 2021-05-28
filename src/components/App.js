@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import tocbot from "tocbot";
 import { DEFAULT_LANGUAGES } from "./Const";
 import Contents from "./ui/Contents";
 import Footer from "./ui/Footer";
@@ -34,16 +35,32 @@ function App() {
     console.log(localLanguages);
     setLanguages(localLanguages);
 
-    loadContents().then((newContents) => setContents(newContents));
+    loadContents().then((newContents) => {
+      setContents(newContents);
+
+      setTimeout(() => {
+        // https://tscanlin.github.io/tocbot/
+        tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: ".js-toc",
+          // Where to grab the headings to build the table of contents.
+          contentSelector: ".js-toc-content",
+          // Which headings to grab inside of the contentSelector element.
+          headingSelector: "h1, h2, h3",
+          // For headings inside relative or absolute positioned containers within content.
+          hasInnerContainers: false,
+          // orderedList can be set to false to generate unordered lists (ul) instead of ordered lists (ol)
+          // orderedList: false,
+        });
+      }, 1000);
+    });
   }, []);
 
   return (
     <div className="App">
       <Header languages={languages} setLanguages={setLanguages} />
-      <div>
-        <SideBar />
-        <Contents languages={languages} contents={contents} />
-      </div>
+      <SideBar />
+      <Contents languages={languages} contents={contents} />
       <Footer />
     </div>
   );

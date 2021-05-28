@@ -4,7 +4,7 @@ import { AVAILABLE_LANGUAGES } from "../Const";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    '& > *': {
+    "& > *": {
       margin: theme.spacing(1),
     },
   },

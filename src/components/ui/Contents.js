@@ -1,5 +1,4 @@
 import { Box, Grid } from "@material-ui/core";
-import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { CATEGORIES, COLUMN_SIZE_DICT } from "../Const";
@@ -67,15 +66,16 @@ const Contents = ({ languages, contents }) => {
           </Grid>
         ))}
       </Grid>
-
-      {CATEGORIES.map((category, i) => (
-        <Box key={i}>
-          <h5>{category}</h5>
-          <Grid container spacing={1}>
-            {languages.map((language) => getSection(language, category))}
-          </Grid>
-        </Box>
-      ))}
+      <div className="js-toc-content">
+        {CATEGORIES.map((category, i) => (
+          <Box key={i}>
+            <h2 id={category}>{category}</h2>
+            <Grid container spacing={1}>
+              {languages.map((language) => getSection(language, category))}
+            </Grid>
+          </Box>
+        ))}
+      </div>
     </>
   );
 };
