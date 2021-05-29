@@ -6,7 +6,12 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     top: "10px",
     right: "10px",
-    "& .js-toc > .toc-list": {
+    fontSize: "0.8em",
+
+    "& .js-toc": {
+      marginTop: "10px",
+    },
+    "& .js-toc .toc-list": {
       listStyle: "none",
     },
     "& .js-toc > .toc-list li a": {
@@ -18,22 +23,21 @@ const useStyles = makeStyles((theme) => ({
     "& .js-toc > .toc-list li:last-child": {
       marginBottom: "0",
     },
-
-    "& .hide-toc": {
-      display: "none",
+    "& .js-toc .is-collapsible": {
+      marginTop: "10px",
+    },
+    "& #id-toc-list": {
+      display: (hideToc) => hideToc ? "none" : "block",
     },
   },
 }));
 
-const SideBar = () => {
-  const classes = useStyles();
+const SideBar = () => {  
   const [hideToc, setHideToc] = useState(false);
+  const classes = useStyles(hideToc);
 
   function toggle() {
-    console.log("toggle");
     setHideToc(!hideToc);
-    const tocDiv = document.querySelector("#id-toc-list");
-    tocDiv.classList.toggle("hide-toc");
   }
 
   return (
