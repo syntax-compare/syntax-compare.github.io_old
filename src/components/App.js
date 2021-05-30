@@ -51,6 +51,13 @@ function App() {
           hasInnerContainers: false,
           // orderedList can be set to false to generate unordered lists (ul) instead of ordered lists (ol)
           // orderedList: false,
+
+          // How many heading levels should not be collapsed.
+          // For example, number 6 will show everything since
+          // there are only 6 heading levels and number 0 will collapse them all.
+          // The sections that are hidden will open
+          // and close as you scroll to headings within them.
+          collapseDepth: 6,
         });
       }, 1000);
     });

@@ -4,35 +4,38 @@ import React, { useState } from "react";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "fixed",
-    top: "10px",
-    right: "10px",
+    padding: "20px",
+    paddingLeft: "5px",
+    top: "0px",
+    right: "0px",
     fontSize: "0.8em",
+    lineHeight: "200%",
+    backgroundColor: (hideToc) => (hideToc ? "transparent" : "lightgray"),
+    height: "100%",
 
+    "& .fab": {
+      marginLeft: "15px",
+    },
     "& .js-toc": {
-      marginTop: "10px",
+      marginTop: "20px",
     },
     "& .js-toc .toc-list": {
       listStyle: "none",
     },
+    "& .js-toc .toc-link": {
+      paddingBottom: "10px",
+    },
     "& .js-toc > .toc-list li a": {
       textDecoration: "none",
     },
-    "& .js-toc > .toc-list li": {
-      marginBottom: "10px",
-    },
-    "& .js-toc > .toc-list li:last-child": {
-      marginBottom: "0",
-    },
-    "& .js-toc .is-collapsible": {
-      marginTop: "10px",
-    },
     "& #id-toc-list": {
-      display: (hideToc) => hideToc ? "none" : "block",
+      position: "relative",
+      display: (hideToc) => (hideToc ? "none" : "block"),
     },
   },
 }));
 
-const SideBar = () => {  
+const SideBar = () => {
   const [hideToc, setHideToc] = useState(false);
   const classes = useStyles(hideToc);
 
@@ -42,7 +45,7 @@ const SideBar = () => {
 
   return (
     <div className={classes.root}>
-      <Fab color="primary" aria-label="add" onClick={toggle}>
+      <Fab color="secondary" className="fab" aria-label="add" onClick={toggle}>
         TOC
       </Fab>
       <div id="id-toc-list" className="js-toc"></div>
