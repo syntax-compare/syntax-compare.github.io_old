@@ -31,7 +31,7 @@ const Header = ({ languages, setLanguages }) => {
 
   return (
     <header>
-      <h1>Grammar Cheet Sheet</h1>
+      <h1>Syntax Cheet Sheet</h1>
       <div className={classes.root}>
         {languages.map((language) => (
           <Button
