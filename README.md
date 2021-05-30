@@ -1,4 +1,4 @@
-# Syntax Cheet Sheet
+# Syntax Note
 A react app that helps you to reference basic syntax of each language.
 
 ## 🙏 Used modules
