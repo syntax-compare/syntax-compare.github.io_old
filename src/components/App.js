@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import tocbot from "tocbot";
-import { DEFAULT_LANGUAGES } from "./Const";
+import { DEFAULT_LANGUAGES, AVAILABLE_LANGUAGES } from "./Const";
 import Contents from "./ui/Contents";
 import Footer from "./ui/Footer";
 import Header from "./ui/Header";
@@ -15,8 +15,8 @@ function App() {
   const loadContents = async () => {
     let newContents = {};
     const md2json = require("md-2-json");
-    for (const lang of ["python", "kotlin"]) {
-      const url = `/${lang}.md`;
+    for (const lang of AVAILABLE_LANGUAGES) {
+      const url = `/common/${lang}.md`;
       console.log(url);
       const response = await fetch(url);
       const rawText = await response.text();

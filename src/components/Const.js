@@ -1,9 +1,9 @@
 export const AVAILABLE_LANGUAGES = [
   "python",
   "kotlin",
-  "cpp",
-  "golang",
   "javascript",
+  // "golang",
+  // "cpp",
 ];
 
 export const DEFAULT_LANGUAGES = ["python", "kotlin"];
@@ -18,8 +18,11 @@ export const CATEGORIES = [
   "2.1. when, switch",
 
   "3. loops",
-  "3.1. for-loop (iterate collection)",
-  "3.2. for-loop (iterate collection with index)",
+  "3.1. for-loop (collection)",
+  "3.2. for-loop (with index)",
+
+  "4. string",
+  "4.1. split",
 
   "10. etc",
   "10.1. range",

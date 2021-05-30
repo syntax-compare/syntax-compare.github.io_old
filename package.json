@@ -11,6 +11,7 @@
     "md-2-json": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-linkify": "^1.0.0-alpha",
     "react-scripts": "4.0.3",
     "react-syntax-highlighter": "^15.4.3",
     "tocbot": "^4.12.3",

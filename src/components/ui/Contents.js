@@ -1,6 +1,10 @@
 import { Box, Grid } from "@material-ui/core";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { darcula } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import ReactLinkify from "react-linkify";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  darcula,
+  duotoneDark,
+} from "react-syntax-highlighter/dist/esm/styles/prism";
 import { CATEGORIES, COLUMN_SIZE_DICT } from "../Const";
 
 const Contents = ({ languages, contents }) => {
@@ -42,14 +46,20 @@ const Contents = ({ languages, contents }) => {
           <p>N/A</p>
         )}
         {outputContent != null ? (
-          <SyntaxHighlighter language="text" style={darcula}>
+          <SyntaxHighlighter style={duotoneDark}>
             {outputContent}
           </SyntaxHighlighter>
         ) : (
           <div></div>
         )}
         {descriptionContent != null ? (
-          <pre>{descriptionContent}</pre>
+          <pre>
+            <ReactLinkify
+              properties={{ target: "_blank" /*TODO: Make it work*/ }}
+            >
+              {descriptionContent}
+            </ReactLinkify>
+          </pre>
         ) : (
           <div></div>
         )}
