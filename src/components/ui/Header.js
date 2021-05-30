@@ -15,13 +15,13 @@ const LANGUAGES_LS = "languages";
 const Header = ({ languages, setLanguages }) => {
   const classes = useStyles();
 
-  function flip(language) {
+  function setIsSelected(language, isSelected) {
     console.log(`${language} has clicked.`);
     var curLanguages = [...languages];
-    if (languages.includes(language)) {
-      curLanguages = curLanguages.filter((item) => item !== language);
-    } else {
+    if (isSelected) {
       curLanguages.push(language);
+    } else {
+      curLanguages = curLanguages.filter((item) => item !== language);
     }
     console.log("new", curLanguages);
 
@@ -33,16 +33,29 @@ const Header = ({ languages, setLanguages }) => {
     <header>
       <h1>Grammar Cheet Sheet</h1>
       <div className={classes.root}>
-        {AVAILABLE_LANGUAGES.map((language, i) => (
+        {languages.map((language) => (
           <Button
-            key={i}
+            key={language}
             color="primary"
-            variant={languages.includes(language) ? "contained" : "outlined"}
-            onClick={() => flip(language)}
+            variant="contained"
+            onClick={() => setIsSelected(language, false)}
           >
             {language}
           </Button>
         ))}
+        {languages.length ? <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> : <></>}
+        {AVAILABLE_LANGUAGES.filter((lang) => !languages.includes(lang)).map(
+          (language) => (
+            <Button
+              key={language}
+              color="primary"
+              variant="outlined"
+              onClick={() => setIsSelected(language, true)}
+            >
+              {language}
+            </Button>
+          )
+        )}
       </div>
     </header>
   );

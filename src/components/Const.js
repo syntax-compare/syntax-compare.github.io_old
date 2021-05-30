@@ -22,7 +22,11 @@ export const CATEGORIES = [
   "3.2. for-loop (with index)",
 
   "4. string",
-  "4.1. split",
+  "4.1. string template",
+  "4.2. split",
+
+  "5. collections",
+  "5.1. filter",
 
   "10. etc",
   "10.1. range",
