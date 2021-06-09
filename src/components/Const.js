@@ -12,6 +12,7 @@ export const CATEGORIES = [
   "1. types",
   "1.1. basic types",
   "1.2. type checks and cast",
+  "1.3. print type",
 
   "2. conditions",
   "2.1. if",
@@ -27,9 +28,11 @@ export const CATEGORIES = [
 
   "5. collections",
   "5.1. filter",
+  "5.2. groupby",
 
   "10. etc",
   "10.1. range",
+  "10.2. ternary operator",
 ];
 
 export const HEADINGS = ["code", "output", "description"];
