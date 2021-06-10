@@ -68,31 +68,22 @@ const Contents = ({ languages, contents }) => {
   }
 
   return (
-    <>
-      <Grid container spacing={1}>
-        {languages.map((language, i) => (
-          <Grid key={i} item xs={columnSize}>
-            <h4>{language}</h4>
-          </Grid>
-        ))}
-      </Grid>
-      <div className="js-toc-content">
-        {CATEGORIES.map((category, i) => (
-          <Box key={i}>
-            {category.indexOf(".") === category.lastIndexOf(".") ? (
-              <h2 id={category}>{category}</h2>
-            ) : (
-              <>
-                <h3 id={category}>{category}</h3>
-                <Grid container spacing={1}>
-                  {languages.map((language) => getSection(language, category))}
-                </Grid>
-              </>
-            )}
-          </Box>
-        ))}
-      </div>
-    </>
+    <div className="js-toc-content">
+      {CATEGORIES.map((category, i) => (
+        <Box key={i}>
+          {category.indexOf(".") === category.lastIndexOf(".") ? (
+            <h2 id={category}>{category}</h2>
+          ) : (
+            <>
+              <h3 id={category}>{category}</h3>
+              <Grid container spacing={1}>
+                {languages.map((language) => getSection(language, category))}
+              </Grid>
+            </>
+          )}
+        </Box>
+      ))}
+    </div>
   );
 };
 

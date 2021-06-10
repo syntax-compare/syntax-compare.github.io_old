@@ -1,6 +1,6 @@
-import { Button, makeStyles } from "@material-ui/core";
+import { Button, Grid, makeStyles } from "@material-ui/core";
 import React from "react";
-import { AVAILABLE_LANGUAGES } from "../Const";
+import { AVAILABLE_LANGUAGES, COLUMN_SIZE_DICT } from "../Const";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,6 +14,8 @@ const LANGUAGES_LS = "languages";
 
 const Header = ({ languages, setLanguages }) => {
   const classes = useStyles();
+
+  const columnSize = COLUMN_SIZE_DICT[languages.length];
 
   function setIsSelected(language, isSelected) {
     console.log(`${language} has clicked.`);
@@ -33,17 +35,6 @@ const Header = ({ languages, setLanguages }) => {
     <header>
       <h1>Syntax Note</h1>
       <div className={classes.root}>
-        {languages.map((language) => (
-          <Button
-            key={language}
-            color="primary"
-            variant="contained"
-            onClick={() => setIsSelected(language, false)}
-          >
-            {language}
-          </Button>
-        ))}
-        {languages.length ? <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> : <></>}
         {AVAILABLE_LANGUAGES.filter((lang) => !languages.includes(lang)).map(
           (language) => (
             <Button
@@ -56,6 +47,19 @@ const Header = ({ languages, setLanguages }) => {
             </Button>
           )
         )}
+        <Grid container spacing={1}>
+          {languages.map((language, i) => (
+            <Grid key={i} item xs={columnSize}>
+              <Button
+                color="primary"
+                variant="contained"
+                onClick={() => setIsSelected(language, false)}
+              >
+                {language}
+              </Button>
+            </Grid>
+          ))}
+        </Grid>
       </div>
     </header>
   );
