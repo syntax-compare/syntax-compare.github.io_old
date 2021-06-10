@@ -16,7 +16,7 @@ function App() {
     let newContents = {};
     const md2json = require("md-2-json");
     for (const lang of AVAILABLE_LANGUAGES) {
-      const url = `/common/${lang}.md`;
+      const url = `https://raw.githubusercontent.com/syntax-note/syntax-note.github.io/main/md_common/${lang}.md`;
       console.log(url);
       const response = await fetch(url);
       const rawText = await response.text();
