@@ -1,10 +1,12 @@
+import { useControlled } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import tocbot from "tocbot";
-import { DEFAULT_LANGUAGES, AVAILABLE_LANGUAGES } from "./Const";
+import { DEFAULT_LANGUAGES } from "./Const";
 import Contents from "./ui/Contents";
 import Footer from "./ui/Footer";
 import Header from "./ui/Header";
 import SideBar from "./ui/SideBar";
+import { getContents } from "./util/NetworkUtil";
 
 function App() {
   const [languages, setLanguages] = useState(DEFAULT_LANGUAGES);
@@ -12,21 +14,8 @@ function App() {
 
   const LANGUAGES_LS = "languages";
 
-  const loadContents = async () => {
-    let newContents = {};
-    const md2json = require("md-2-json");
-    for (const lang of AVAILABLE_LANGUAGES) {
-      const url = `https://raw.githubusercontent.com/syntax-note/syntax-note.github.io/main/md_common/${lang}.md`;
-      console.log(url);
-      const response = await fetch(url);
-      const rawText = await response.text();
-      const output = md2json.parse(rawText);
-      console.log(output);
-      newContents[lang] = output;
-    }
-    console.log(newContents);
-    return newContents;
-  };
+  const fruits = ["apple", "banana", "mango"];
+  console.log(typeof fruits);
 
   useEffect(() => {
     console.log("App mounted");
@@ -35,7 +24,7 @@ function App() {
     console.log(localLanguages);
     setLanguages(localLanguages);
 
-    loadContents().then((newContents) => {
+    getContents().then((newContents) => {
       setContents(newContents);
 
       setTimeout(() => {
