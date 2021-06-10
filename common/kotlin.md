@@ -1,3 +1,29 @@
+# 1. types
+
+# 1.1. basic types
+## description
+- https://kotlinlang.org/docs/basic-types.html
+
+# 1.2. type checks and cast
+## description
+- https://kotlinlang.org/docs/typecasts.html
+
+
+# 1.3. print type
+## code
+```kotlin
+val fruits = listOf("apple", "banana", "mango")
+println(fruits::class.simpleName)
+```
+
+## output
+```
+ArrayList
+```
+
+## description
+- https://stackoverflow.com/a/56299599/16111308
+
 # 3. loops
 
 # 3.1. for-loop (collection)
@@ -5,7 +31,14 @@
 ## code
 ```kotlin
 val fruits = listOf("apple", "banana", "mango")
+
+// option 1
 for (fruit in fruits) {
+    println(fruit)
+}
+
+// option 2
+fruits.forEach { fruit ->
     println(fruit)
 }
 ```
@@ -20,7 +53,6 @@ mango
 ## description
 - https://kotlinlang.org/docs/iterators.html
 - https://kotlinlang.org/docs/control-flow.html#for-loops
-- `forEach` 말고 그냥 `for` 쓰라는 듯 (https://kotlinlang.org/docs/coding-conventions.html#loops)
 
 # 3.2. for-loop (with index)
 
@@ -34,11 +66,16 @@ for (i in fruits.indices) {
 }
 
 // option 2
-for ((index, value) in fruits.withIndex()) {
-    println("$index: $value")
+for ((i, fruit) in fruits.withIndex()) {
+    println("$i: $fruit")
 }
 
-// option 3 (for specific range)
+// option 3
+fruits.forEachIndexed { i, fruit ->
+    println("$i: $fruit")
+}
+
+// option 4 (for specific range)
 for (i in 0..2) {  // [0, 2]
     println("$i: ${fruits[i]}")
 }
@@ -53,3 +90,47 @@ for (i in 0..2) {  // [0, 2]
 
 ## description
 - https://kotlinlang.org/docs/control-flow.html#for-loops
+
+
+
+# 5. collections
+
+# 5.1. filter
+# 5.2. groupby
+## code
+```kotlin
+val numbers = listOf("one", "two", "three", "four", "five")
+val grouped = numbers.groupBy { number -> number[0] }  // 첫 글자로 그룹핑
+println(grouped)
+```
+
+## output
+```
+{o=[one], t=[two, three], f=[four, five]}
+```
+
+## description
+- https://kotlinlang.org/docs/collection-grouping.html
+
+
+# 10. etc
+
+# 10.2. ternary operator
+
+## code
+```kotlin
+val a = 10
+val b = 20
+
+val max = if (a > b) a else b  // If expression
+println(max)
+```
+
+## output
+```
+20
+```
+
+## description
+- https://kotlinlang.org/docs/control-flow.html
+- if가 expression 이라서, 따로 3항 연산자 없음
