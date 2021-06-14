@@ -102,3 +102,27 @@ console.log(result);
 ```
 ## description
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
+# 5.2. groupby
+## code
+```javascript
+const numbers = ["one", "two", "three", "four", "five"];
+const grouped = numbers.reduce((acc, value) => {
+  if (!acc[value[0]]) {
+    acc[value[0]] = [];
+  }
+  acc[value[0]].push(value);
+  return acc;
+}, {});
+
+console.log(grouped);
+```
+
+## output
+```
+> Object { o: Array ["one"], t: Array ["two", "three"], f: Array ["four", "five"] }
+```
+
+## description
+- https://www.robinwieruch.de/javascript-groupby
+
