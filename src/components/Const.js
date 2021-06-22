@@ -33,6 +33,7 @@ export const CATEGORIES = [
   "10. etc",
   "10.1. range",
   "10.2. ternary operator",
+  "10.3. coding convention",
 ];
 
 export const HEADINGS = ["code", "output", "description"];

@@ -134,3 +134,9 @@ println(max)
 ## description
 - https://kotlinlang.org/docs/control-flow.html
 - if가 expression 이라서, 따로 3항 연산자 없음
+
+# 10.3. coding convention
+## description
+- 공식 가이드 https://kotlinlang.org/docs/coding-conventions.html
+- 공식 가이드 한글 번역 https://wnsgml972.github.io/kotlin/2020/11/28/kotlin-coding-convention/
+- 안드로이드 공식 가이드 https://developer.android.com/kotlin/style-guide
