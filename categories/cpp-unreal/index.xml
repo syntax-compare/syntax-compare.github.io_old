@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpp-unreal on Syntax Compare</title>
+    <link>https://syntax-compare.github.io/categories/cpp-unreal/</link>
+    <description>Recent content in cpp-unreal on Syntax Compare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Dec 2021 20:30:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/cpp-unreal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>9.3. log</title>
+      <link>https://syntax-compare.github.io/compare/cpp-unreal/9.3.log/</link>
+      <pubDate>Fri, 03 Dec 2021 20:30:00 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/compare/cpp-unreal/9.3.log/</guid>
+      <description>&lt;p&gt;ArenaBattle.h&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;EngineMinimal.h&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+DECLARE_LOG_CATEGORY_EXTERN(ArenaBattle, Log, All);  &lt;span style=&#34;color:#75715e&#34;&gt;// 로그 태그
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#define ABLOG_CALLINFO (FString(__FUNCTION__) + TEXT(&amp;#34;(&amp;#34;) + FString::FromInt(__LINE__) + TEXT(&amp;#34;)&amp;#34;))
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ABLOG_S(Verbosity) UE_LOG(ArenaBattle, Verbosity, TEXT(&amp;#34;%s&amp;#34;), *ABLOG_CALLINFO)
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#define ABLOG(Verbosity, Format, ...) UE_LOG(ArenaBattle, Verbosity, TEXT(&amp;#34;%s %s&amp;#34;), *ABLOG_CALLINFO, *FString::Printf(Format, ##__VA_ARGS__))
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ArenaBattle.cpp&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;DEFINE_LOG_CATEGORY(ArenaBattle);  &lt;span style=&#34;color:#75715e&#34;&gt;// 로그 태그
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, ArenaBattle, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ArenaBattle&amp;#34;&lt;/span&gt; );
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usage&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// 헤더 파일에서 대표 헤더 포함
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;#34;ArenaBattle.h&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;// 사용처
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;UE_LOG(ArenaBattle, Warning, TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Actor Name : %s, ID: %d, Location X: %.3f&amp;#34;&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;GetName(), ID, GetActorLocation().X);
+ABLOG_S(Warning);
+ABLOG(Warning, TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Actor Name : %s, ID: %d, Location X: %.3f&amp;#34;&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;GetName(), ID, GetActorLocation().X);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;출력&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;ArenaBattle: Warning: Actor Name : Fountain_1, ID: 0, Location X: 0.000
+ArenaBattle: Warning: AFountain::BeginPlay(51)
+ArenaBattle: Warning: AFountain::BeginPlay(52) Actor Name : Fountain_1, ID: 0, Location X: 0.000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>1.1. coding convention</title>
+      <link>https://syntax-compare.github.io/compare/cpp-unreal/1.1.coding-convention/</link>
+      <pubDate>Fri, 03 Dec 2021 09:15:19 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/compare/cpp-unreal/1.1.coding-convention/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.unrealengine.com/4.27/en-US/ProductionPipelines/DevelopmentSetup/CodingStandard/&#34;&gt;Coding Standard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>7.1. constructor</title>
+      <link>https://syntax-compare.github.io/compare/cpp-unreal/7.1.constructor/</link>
+      <pubDate>Fri, 03 Dec 2021 09:15:19 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/compare/cpp-unreal/7.1.constructor/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;UCLASS()
+&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ARENABATTLE_API&lt;/span&gt; AFountain : &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; AActor
+{
+	GENERATED_BODY()
+
+    &lt;span style=&#34;color:#75715e&#34;&gt;// ..
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; Body;
+
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; Water;
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;AFountain&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;AFountain()
+{
+	Body &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CreateDefaultSubobject&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;UStaticMeshComponent&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;BODY&amp;#34;&lt;/span&gt;));
+	Water &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; CreateDefaultSubobject&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;UStaticMeshComponent&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;WATER&amp;#34;&lt;/span&gt;));
+
+	RootComponent &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Body;
+	Water&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;SetupAttachment(Body);
+	Water&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;SetRelativeLocation(FVector(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0f&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.0f&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;135.0f&lt;/span&gt;));
+
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; ConstructorHelpers&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;FObjectFinder&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;UStaticMesh&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; SM_BODY(TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;StaticMesh&amp;#39;/Game/InfinityBladeGrassLands/Environments/Plains/Env_Plains_Ruins/StaticMesh/SM_Plains_Castle_Fountain_01.SM_Plains_Castle_Fountain_01&amp;#39;&amp;#34;&lt;/span&gt;));
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (SM_BODY.Succeeded())
+	{
+		Body&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;SetStaticMesh(SM_BODY.Object);
+	}
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;static&lt;/span&gt; ConstructorHelpers&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;FObjectFinder&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;UStaticMesh&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; SM_WATER(TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;StaticMesh&amp;#39;/Game/InfinityBladeGrassLands/Effects/FX_Meshes/Env/SM_Plains_Fountain_02.SM_Plains_Fountain_02&amp;#39;&amp;#34;&lt;/span&gt;));
+	&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (SM_WATER.Succeeded())
+	{
+		Water&lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt;SetStaticMesh(SM_WATER.Object);
+	}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

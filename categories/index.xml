@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Syntax Compare</title>
+    <link>https://syntax-compare.github.io/categories/</link>
+    <description>Recent content in Categories on Syntax Compare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Dec 2021 20:30:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cpp-unreal</title>
+      <link>https://syntax-compare.github.io/categories/cpp-unreal/</link>
+      <pubDate>Fri, 03 Dec 2021 20:30:00 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/categories/cpp-unreal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://syntax-compare.github.io/categories/kotlin/</link>
+      <pubDate>Mon, 15 Nov 2021 09:56:46 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/categories/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://syntax-compare.github.io/categories/javascript/</link>
+      <pubDate>Mon, 15 Nov 2021 09:55:40 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://syntax-compare.github.io/categories/python/</link>
+      <pubDate>Mon, 15 Nov 2021 09:15:19 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
