@@ -6,7 +6,7 @@
 
     
     
-    <link href="/sass/main.min.99ce2c4be835a5b36983638dbe00eda86fd968e646f28021b91d46eecfbd4433.css" rel="stylesheet" />
+    <link href="/stylesheet.min.f6b6d609c2b845757b2586dc62d605194f6685cec286b6906dc33ab69b41065e.css" rel="stylesheet" />
 
     <title>Document</title>
   </head>
@@ -16,28 +16,28 @@
     <div class="heading-secondary">9.3. log</div>
 
     <p>ArenaBattle.h</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;EngineMinimal.h&#34;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-DECLARE_LOG_CATEGORY_EXTERN(ArenaBattle, Log, All);  <span style="color:#75715e">// 로그 태그
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#define ABLOG_CALLINFO (FString(__FUNCTION__) + TEXT(&#34;(&#34;) + FString::FromInt(__LINE__) + TEXT(&#34;)&#34;))
-</span><span style="color:#75715e">#define ABLOG_S(Verbosity) UE_LOG(ArenaBattle, Verbosity, TEXT(&#34;%s&#34;), *ABLOG_CALLINFO)
-</span><span style="color:#75715e">#define ABLOG(Verbosity, Format, ...) UE_LOG(ArenaBattle, Verbosity, TEXT(&#34;%s %s&#34;), *ABLOG_CALLINFO, *FString::Printf(Format, ##__VA_ARGS__))
-</span></code></pre></div><p>ArenaBattle.cpp</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">DEFINE_LOG_CATEGORY(ArenaBattle);  <span style="color:#75715e">// 로그 태그
-</span><span style="color:#75715e"></span>IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, ArenaBattle, <span style="color:#e6db74">&#34;ArenaBattle&#34;</span> );
-</code></pre></div><p>Usage</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">// 헤더 파일에서 대표 헤더 포함
-</span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;ArenaBattle.h&#34;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// 사용처
-</span><span style="color:#75715e"></span>UE_LOG(ArenaBattle, Warning, TEXT(<span style="color:#e6db74">&#34;Actor Name : %s, ID: %d, Location X: %.3f&#34;</span>), <span style="color:#f92672">*</span>GetName(), ID, GetActorLocation().X);
-ABLOG_S(Warning);
-ABLOG(Warning, TEXT(<span style="color:#e6db74">&#34;Actor Name : %s, ID: %d, Location X: %.3f&#34;</span>), <span style="color:#f92672">*</span>GetName(), ID, GetActorLocation().X);
-</code></pre></div><p>출력</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">ArenaBattle: Warning: Actor Name : Fountain_1, ID: 0, Location X: 0.000
-ArenaBattle: Warning: AFountain::BeginPlay(51)
-ArenaBattle: Warning: AFountain::BeginPlay(52) Actor Name : Fountain_1, ID: 0, Location X: 0.000
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;EngineMinimal.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>DECLARE_LOG_CATEGORY_EXTERN(ArenaBattle, Log, All);  <span style="color:#75715e">// 로그 태그
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define ABLOG_CALLINFO (FString(__FUNCTION__) + TEXT(&#34;(&#34;) + FString::FromInt(__LINE__) + TEXT(&#34;)&#34;))
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define ABLOG_S(Verbosity) UE_LOG(ArenaBattle, Verbosity, TEXT(&#34;%s&#34;), *ABLOG_CALLINFO)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define ABLOG(Verbosity, Format, ...) UE_LOG(ArenaBattle, Verbosity, TEXT(&#34;%s %s&#34;), *ABLOG_CALLINFO, *FString::Printf(Format, ##__VA_ARGS__))
+</span></span></span></code></pre></div><p>ArenaBattle.cpp</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>DEFINE_LOG_CATEGORY(ArenaBattle);  <span style="color:#75715e">// 로그 태그
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, ArenaBattle, <span style="color:#e6db74">&#34;ArenaBattle&#34;</span> );
+</span></span></code></pre></div><p>Usage</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// 헤더 파일에서 대표 헤더 포함
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;ArenaBattle.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 사용처
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>UE_LOG(ArenaBattle, Warning, TEXT(<span style="color:#e6db74">&#34;Actor Name : %s, ID: %d, Location X: %.3f&#34;</span>), <span style="color:#f92672">*</span>GetName(), ID, GetActorLocation().X);
+</span></span><span style="display:flex;"><span>ABLOG_S(Warning);
+</span></span><span style="display:flex;"><span>ABLOG(Warning, TEXT(<span style="color:#e6db74">&#34;Actor Name : %s, ID: %d, Location X: %.3f&#34;</span>), <span style="color:#f92672">*</span>GetName(), ID, GetActorLocation().X);
+</span></span></code></pre></div><p>출력</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>ArenaBattle: Warning: Actor Name : Fountain_1, ID: 0, Location X: 0.000
+</span></span><span style="display:flex;"><span>ArenaBattle: Warning: AFountain::BeginPlay(51)
+</span></span><span style="display:flex;"><span>ArenaBattle: Warning: AFountain::BeginPlay(52) Actor Name : Fountain_1, ID: 0, Location X: 0.000
+</span></span></code></pre></div>
   </body>
 </html>

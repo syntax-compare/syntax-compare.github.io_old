@@ -1,5 +1,5 @@
 const toggleBtns = document.querySelectorAll(
-  ".selected-container > .item, .remained-container > .item"
+  ".js-lang-toggle-btn, .remained-container > .button"
 );
 
 const pythonContents = document.querySelectorAll(".python");
