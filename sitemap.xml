@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://syntax-compare.github.io/compare/cpp-unreal/9.3.log/</loc>
-    <lastmod>2021-12-03T20:30:00+09:00</lastmod>
+    <loc>https://syntax-compare.github.io/compare/python/5.1.string-template/</loc>
+    <lastmod>2022-04-10T23:00:00+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/categories/</loc>
-    <lastmod>2021-12-03T20:30:00+09:00</lastmod>
+    <lastmod>2022-04-10T23:00:00+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/compare/</loc>
+    <lastmod>2022-04-10T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://syntax-compare.github.io/categories/python/</loc>
+    <lastmod>2022-04-10T23:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://syntax-compare.github.io/compare/cpp-unreal/9.3.log/</loc>
     <lastmod>2021-12-03T20:30:00+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/categories/cpp-unreal/</loc>
@@ -17,7 +23,7 @@
     <loc>https://syntax-compare.github.io/compare/cpp-unreal/1.1.coding-convention/</loc>
     <lastmod>2021-12-03T09:15:19+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/cpp-unreal/7.1.constructor/</loc>
+    <loc>https://syntax-compare.github.io/compare/cpp-unreal/6.2.constructor/</loc>
     <lastmod>2021-12-03T09:15:19+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/compare/kotlin/9.2.ternary-operator/</loc>
@@ -26,25 +32,25 @@
     <loc>https://syntax-compare.github.io/categories/kotlin/</loc>
     <lastmod>2021-11-15T09:56:46+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/kotlin/6.2.groupby/</loc>
+    <loc>https://syntax-compare.github.io/compare/kotlin/4.4.utility/</loc>
     <lastmod>2021-11-15T09:56:31+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/kotlin/4.2.for-loop-with-index/</loc>
+    <loc>https://syntax-compare.github.io/compare/kotlin/3.2.for-loop-with-index/</loc>
     <lastmod>2021-11-15T09:56:12+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/kotlin/4.1.for-loop-collection/</loc>
+    <loc>https://syntax-compare.github.io/compare/kotlin/3.1.for-loop-collection/</loc>
     <lastmod>2021-11-15T09:56:03+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/compare/javascript/1.1.coding-convention/</loc>
     <lastmod>2021-11-15T09:55:40+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/javascript/2.3.print-type/</loc>
+    <loc>https://syntax-compare.github.io/compare/javascript/1.2.types/</loc>
     <lastmod>2021-11-15T09:55:40+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/kotlin/2.3.print-type/</loc>
+    <loc>https://syntax-compare.github.io/compare/javascript/3.1.for-loop-collection/</loc>
     <lastmod>2021-11-15T09:55:40+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/javascript/4.1.for-loop-collection/</loc>
+    <loc>https://syntax-compare.github.io/compare/javascript/4.4.utility/</loc>
     <lastmod>2021-11-15T09:55:40+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/compare/javascript/5.1.string-template/</loc>
@@ -53,19 +59,10 @@
     <loc>https://syntax-compare.github.io/compare/javascript/5.2.sprit/</loc>
     <lastmod>2021-11-15T09:55:40+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/javascript/6.1.filter/</loc>
-    <lastmod>2021-11-15T09:55:40+09:00</lastmod>
-  </url><url>
-    <loc>https://syntax-compare.github.io/compare/javascript/6.2.groupby/</loc>
-    <lastmod>2021-11-15T09:55:40+09:00</lastmod>
-  </url><url>
     <loc>https://syntax-compare.github.io/categories/javascript/</loc>
     <lastmod>2021-11-15T09:55:40+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/kotlin/2.2.type-checks-and-cast/</loc>
-    <lastmod>2021-11-15T09:55:24+09:00</lastmod>
-  </url><url>
-    <loc>https://syntax-compare.github.io/compare/kotlin/2.1.basic-types/</loc>
+    <loc>https://syntax-compare.github.io/compare/kotlin/1.2.types/</loc>
     <lastmod>2021-11-15T09:55:11+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/</loc>
@@ -77,13 +74,10 @@
     <loc>https://syntax-compare.github.io/compare/python/1.1.coding-convention/</loc>
     <lastmod>2021-11-15T09:15:19+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/categories/python/</loc>
-    <lastmod>2021-11-15T09:15:19+09:00</lastmod>
-  </url><url>
-    <loc>https://syntax-compare.github.io/compare/python/4.2.for-loop-with-index/</loc>
+    <loc>https://syntax-compare.github.io/compare/python/3.2.for-loop-with-index/</loc>
     <lastmod>2021-11-13T09:15:19+09:00</lastmod>
   </url><url>
-    <loc>https://syntax-compare.github.io/compare/python/4.1.for-loop-collection/</loc>
+    <loc>https://syntax-compare.github.io/compare/python/3.1.for-loop-collection/</loc>
     <lastmod>2021-11-12T09:15:19+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/tags/</loc>

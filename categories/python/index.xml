@@ -6,7 +6,23 @@
     <description>Recent content in python on Syntax Compare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Nov 2021 09:15:19 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 23:00:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.1. string template</title>
+      <link>https://syntax-compare.github.io/compare/python/5.1.string-template/</link>
+      <pubDate>Sun, 10 Apr 2022 23:00:00 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/compare/python/5.1.string-template/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; math
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The value of pi is approximately &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;math&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pi&lt;span style=&#34;color:#e6db74&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.3f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;.&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;The value of pi &lt;span style=&#34;color:#f92672&#34;&gt;is&lt;/span&gt; approximately &lt;span style=&#34;color:#ae81ff&#34;&gt;3.142&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mechurak.github.io/ko/posts/python/2020-11-29_f-string/&#34;&gt;https://mechurak.github.io/ko/posts/python/2020-11-29_f-string/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals&#34;&gt;https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>1.1. coding convention</title>
       <link>https://syntax-compare.github.io/compare/python/1.1.coding-convention/</link>
@@ -22,11 +38,11 @@
     </item>
     
     <item>
-      <title>4.2. for-loop (with index)</title>
-      <link>https://syntax-compare.github.io/compare/python/4.2.for-loop-with-index/</link>
+      <title>3.2. for-loop (with index)</title>
+      <link>https://syntax-compare.github.io/compare/python/3.2.for-loop-with-index/</link>
       <pubDate>Sat, 13 Nov 2021 09:15:19 +0900</pubDate>
       
-      <guid>https://syntax-compare.github.io/compare/python/4.2.for-loop-with-index/</guid>
+      <guid>https://syntax-compare.github.io/compare/python/3.2.for-loop-with-index/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fruits &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;apple&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;banana&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mango&amp;#34;&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i, fruit &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; enumerate(fruits):
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;i&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;fruit&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
@@ -37,11 +53,11 @@
     </item>
     
     <item>
-      <title>4.1. for-loop (collection)</title>
-      <link>https://syntax-compare.github.io/compare/python/4.1.for-loop-collection/</link>
+      <title>3.1. for-loop (collection)</title>
+      <link>https://syntax-compare.github.io/compare/python/3.1.for-loop-collection/</link>
       <pubDate>Fri, 12 Nov 2021 09:15:19 +0900</pubDate>
       
-      <guid>https://syntax-compare.github.io/compare/python/4.1.for-loop-collection/</guid>
+      <guid>https://syntax-compare.github.io/compare/python/3.1.for-loop-collection/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python:for-loop.py&#34; data-lang=&#34;python:for-loop.py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fruits &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;apple&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;banana&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mango&amp;#34;&lt;/span&gt;]
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; fruit &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; fruits:
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(fruit)

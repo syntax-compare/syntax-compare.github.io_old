@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    
+    
+    <link href="/stylesheet.min.f6b6d609c2b845757b2586dc62d605194f6685cec286b6906dc33ab69b41065e.css" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <p>kotlin</p>
+
+    <div class="heading-secondary">3.2. for-loop (with index)</div>
+
+    <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> fruits = listOf(<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// option 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> fruits.indices) {
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$i</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${fruits[i]}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// option 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> ((i, fruit) <span style="color:#66d9ef">in</span> fruits.withIndex()) {
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$i</span><span style="color:#e6db74">: </span><span style="color:#e6db74">$fruit</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// option 3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>fruits.forEachIndexed { i, fruit <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$i</span><span style="color:#e6db74">: </span><span style="color:#e6db74">$fruit</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// option 4 (for specific range)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (i <span style="color:#66d9ef">in</span> <span style="color:#ae81ff">0.</span>.<span style="color:#ae81ff">2</span>) {  <span style="color:#75715e">// [0, 2]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    println(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$i</span><span style="color:#e6db74">: </span><span style="color:#e6db74">${fruits[i]}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>0: apple
+</span></span><span style="display:flex;"><span>1: banana
+</span></span><span style="display:flex;"><span>2: mango
+</span></span></code></pre></div><p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://kotlinlang.org/docs/control-flow.html#for-loops">https://kotlinlang.org/docs/control-flow.html#for-loops</a></li>
+</ul>
+  </body>
+</html>

@@ -80,25 +80,26 @@
     <li><a href="#1-overall">1. overall</a>
       <ul>
         <li><a href="#11-coding-convention">1.1. coding convention</a></li>
+        <li><a href="#12-types">1.2. types</a></li>
       </ul>
     </li>
-    <li><a href="#2-types">2. types</a>
+    <li><a href="#2-conditions">2. conditions</a>
       <ul>
-        <li><a href="#21-basic-types">2.1. basic types</a></li>
-        <li><a href="#22-type-checks-and-cast">2.2. type checks and cast</a></li>
-        <li><a href="#23-print-type">2.3. print type</a></li>
+        <li><a href="#21-if">2.1. if</a></li>
+        <li><a href="#22-when-switch">2.2. when, switch</a></li>
       </ul>
     </li>
-    <li><a href="#3-conditions">3. conditions</a>
+    <li><a href="#3-loops">3. loops</a>
       <ul>
-        <li><a href="#31-if">3.1. if</a></li>
-        <li><a href="#32-when-switch">3.2. when, switch</a></li>
+        <li><a href="#31-for-loop-collection">3.1. for-loop (collection)</a></li>
+        <li><a href="#32-for-loop-with-index">3.2. for-loop (with index)</a></li>
       </ul>
     </li>
-    <li><a href="#4-loops">4. loops</a>
+    <li><a href="#4-container">4. container</a>
       <ul>
-        <li><a href="#41-for-loop-collection">4.1. for-loop (collection)</a></li>
-        <li><a href="#42-for-loop-with-index">4.2. for-loop (with index)</a></li>
+        <li><a href="#41-array">4.1. array</a></li>
+        <li><a href="#42-list">4.2. list</a></li>
+        <li><a href="#43-dict">4.3. dict</a></li>
       </ul>
     </li>
     <li><a href="#5-string">5. string</a>
@@ -107,16 +108,11 @@
         <li><a href="#52-split">5.2. split</a></li>
       </ul>
     </li>
-    <li><a href="#6-collections">6. collections</a>
+    <li><a href="#6-class">6. class</a>
       <ul>
-        <li><a href="#61-filter">6.1. filter</a></li>
-        <li><a href="#62-groupby">6.2. groupby</a></li>
-      </ul>
-    </li>
-    <li><a href="#7-object-management">7. object management</a>
-      <ul>
-        <li><a href="#71-constructor">7.1. constructor</a></li>
-        <li><a href="#72-spawn">7.2. spawn</a></li>
+        <li><a href="#61-class-overall">6.1. class overall</a></li>
+        <li><a href="#62-constructor">6.2. constructor</a></li>
+        <li><a href="#63-spawn">6.3. spawn</a></li>
       </ul>
     </li>
     <li><a href="#9-etc">9. etc</a>
@@ -221,20 +217,12 @@
           
           </div>
         
-      
-        
-        
-        
-        
-        
-        <h3 class="title is-3 is-spaced pt-6" id=2-types>2. types</h3>
-        
           
           
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=21-basic-types>2.1. basic types</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=12-types>1.2. types</h4>
           
           <div class="subsection">
           
@@ -252,112 +240,21 @@
             
             
               <div class="item kotlin">
-                <p><a href="https://syntax-compare.github.io/compare/kotlin/2.1.basic-types/">kotlin</a></p>
-                <p><p><strong>Reference</strong></p>
+                <p><a href="https://syntax-compare.github.io/compare/kotlin/1.2.types/">kotlin</a></p>
+                <p><h3 id="basic-types">basic types</h3>
+<p><strong>Reference</strong></p>
 <ul>
 <li><a href="https://kotlinlang.org/docs/basic-types.html">https://kotlinlang.org/docs/basic-types.html</a></li>
-</ul></p>
-                
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item javascript">
-                  .
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item cpp-unreal">
-                  .
-              </div>
-            
-          
-          </div>
-        
-          
-          
-          
-          
-          
-          <h4 class="subtitle is-4 pl-4 pt-4" id=22-type-checks-and-cast>2.2. type checks and cast</h4>
-          
-          <div class="subsection">
-          
-            
-            
-            
-            
-              <div class="item python">
-                  .
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item kotlin">
-                <p><a href="https://syntax-compare.github.io/compare/kotlin/2.2.type-checks-and-cast/">kotlin</a></p>
-                <p><p><strong>Reference</strong></p>
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="type-checks-and-cast">type checks and cast</h3>
+<p><strong>Reference</strong></p>
 <ul>
 <li><a href="https://kotlinlang.org/docs/typecasts.html">https://kotlinlang.org/docs/typecasts.html</a></li>
-</ul></p>
-                
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item javascript">
-                  .
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item cpp-unreal">
-                  .
-              </div>
-            
-          
-          </div>
-        
-          
-          
-          
-          
-          
-          <h4 class="subtitle is-4 pl-4 pt-4" id=23-print-type>2.3. print type</h4>
-          
-          <div class="subsection">
-          
-            
-            
-            
-            
-              <div class="item python">
-                  .
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item kotlin">
-                <p><a href="https://syntax-compare.github.io/compare/kotlin/2.3.print-type/">kotlin</a></p>
-                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> fruits = listOf(<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>)
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="print-type">print type</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> fruits = listOf(<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>)
 </span></span><span style="display:flex;"><span>println(fruits<span style="color:#f92672">::</span><span style="color:#66d9ef">class</span>.simpleName)
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>ArrayList
 </span></span></code></pre></div><p><strong>Reference</strong></p>
@@ -373,8 +270,9 @@
             
             
               <div class="item javascript">
-                <p><a href="https://syntax-compare.github.io/compare/javascript/2.3.print-type/">javascript</a></p>
-                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>];
+                <p><a href="https://syntax-compare.github.io/compare/javascript/1.2.types/">javascript</a></p>
+                <p><h3 id="print-type">print type</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>];
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">fruits</span>);
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>&gt; &#34;object&#34;
 </span></span></code></pre></div><p><strong>Reference</strong></p>
@@ -402,14 +300,14 @@
         
         
         
-        <h3 class="title is-3 is-spaced pt-6" id=3-conditions>3. conditions</h3>
+        <h3 class="title is-3 is-spaced pt-6" id=2-conditions>2. conditions</h3>
         
           
           
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=31-if>3.1. if</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=21-if>2.1. if</h4>
           
           <div class="subsection">
           
@@ -456,7 +354,7 @@
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=32-when-switch>3.2. when, switch</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=22-when-switch>2.2. when, switch</h4>
           
           <div class="subsection">
           
@@ -504,14 +402,14 @@
         
         
         
-        <h3 class="title is-3 is-spaced pt-6" id=4-loops>4. loops</h3>
+        <h3 class="title is-3 is-spaced pt-6" id=3-loops>3. loops</h3>
         
           
           
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=41-for-loop-collection>4.1. for-loop (collection)</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=31-for-loop-collection>3.1. for-loop (collection)</h4>
           
           <div class="subsection">
           
@@ -520,7 +418,7 @@
             
             
               <div class="item python">
-                <p><a href="https://syntax-compare.github.io/compare/python/4.1.for-loop-collection/">python</a></p>
+                <p><a href="https://syntax-compare.github.io/compare/python/3.1.for-loop-collection/">python</a></p>
                 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python:for-loop.py" data-lang="python:for-loop.py"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>]
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> fruit <span style="color:#f92672">in</span> fruits:
 </span></span><span style="display:flex;"><span>    print(fruit)
@@ -537,7 +435,7 @@
             
             
               <div class="item kotlin">
-                <p><a href="https://syntax-compare.github.io/compare/kotlin/4.1.for-loop-collection/">kotlin</a></p>
+                <p><a href="https://syntax-compare.github.io/compare/kotlin/3.1.for-loop-collection/">kotlin</a></p>
                 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> fruits = listOf(<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// option 1
@@ -566,7 +464,7 @@
             
             
               <div class="item javascript">
-                <p><a href="https://syntax-compare.github.io/compare/javascript/4.1.for-loop-collection/">javascript</a></p>
+                <p><a href="https://syntax-compare.github.io/compare/javascript/3.1.for-loop-collection/">javascript</a></p>
                 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>];
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// option 1 (for...of)
@@ -604,7 +502,7 @@
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=42-for-loop-with-index>4.2. for-loop (with index)</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=32-for-loop-with-index>3.2. for-loop (with index)</h4>
           
           <div class="subsection">
           
@@ -613,7 +511,7 @@
             
             
               <div class="item python">
-                <p><a href="https://syntax-compare.github.io/compare/python/4.2.for-loop-with-index/">python</a></p>
+                <p><a href="https://syntax-compare.github.io/compare/python/3.2.for-loop-with-index/">python</a></p>
                 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>]
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i, fruit <span style="color:#f92672">in</span> enumerate(fruits):
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>fruit<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
@@ -630,7 +528,7 @@
             
             
               <div class="item kotlin">
-                <p><a href="https://syntax-compare.github.io/compare/kotlin/4.2.for-loop-with-index/">kotlin</a></p>
+                <p><a href="https://syntax-compare.github.io/compare/kotlin/3.2.for-loop-with-index/">kotlin</a></p>
                 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> fruits = listOf(<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// option 1
@@ -689,6 +587,237 @@
         
         
         
+        <h3 class="title is-3 is-spaced pt-6" id=4-container>4. container</h3>
+        
+          
+          
+          
+          
+          
+          <h4 class="subtitle is-4 pl-4 pt-4" id=41-array>4.1. array</h4>
+          
+          <div class="subsection">
+          
+            
+            
+            
+            
+              <div class="item python">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item kotlin">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item javascript">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item cpp-unreal">
+                  .
+              </div>
+            
+          
+          </div>
+        
+          
+          
+          
+          
+          
+          <h4 class="subtitle is-4 pl-4 pt-4" id=42-list>4.2. list</h4>
+          
+          <div class="subsection">
+          
+            
+            
+            
+            
+              <div class="item python">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item kotlin">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item javascript">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item cpp-unreal">
+                  .
+              </div>
+            
+          
+          </div>
+        
+          
+          
+          
+          
+          
+          <h4 class="subtitle is-4 pl-4 pt-4" id=43-dict>4.3. dict</h4>
+          
+          <div class="subsection">
+          
+            
+            
+            
+            
+              <div class="item python">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item kotlin">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item javascript">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item cpp-unreal">
+                  .
+              </div>
+            
+          
+          </div>
+        
+          
+          
+          
+          
+          
+          <h4 class="subtitle is-4 pl-4 pt-4" id=44-utility>4.4. utility</h4>
+          
+          <div class="subsection">
+          
+            
+            
+            
+            
+              <div class="item python">
+                  .
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item kotlin">
+                <p><a href="https://syntax-compare.github.io/compare/kotlin/4.4.utility/">kotlin</a></p>
+                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> numbers = listOf(<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>, <span style="color:#e6db74">&#34;five&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> grouped = numbers.groupBy { number <span style="color:#f92672">-&gt;</span> number[<span style="color:#ae81ff">0</span>] }  <span style="color:#75715e">// 첫 글자로 그룹핑
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>println(grouped)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>{o=[one], t=[two, three], f=[four, five]}
+</span></span></code></pre></div><p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://kotlinlang.org/docs/collection-grouping.html">https://kotlinlang.org/docs/collection-grouping.html</a></li>
+</ul></p>
+                
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item javascript">
+                <p><a href="https://syntax-compare.github.io/compare/javascript/4.4.utility/">javascript</a></p>
+                <p><h3 id="filter">filter</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">fruit</span>) =&gt; <span style="color:#a6e22e">fruit</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>&gt; Array [&#34;banana&#34;]
+</span></span></code></pre></div><p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a></li>
+</ul>
+<h3 id="groupby">groupby</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>, <span style="color:#e6db74">&#34;five&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">grouped</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">value</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">acc</span>[<span style="color:#a6e22e">value</span>[<span style="color:#ae81ff">0</span>]]) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">acc</span>[<span style="color:#a6e22e">value</span>[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">acc</span>[<span style="color:#a6e22e">value</span>[<span style="color:#ae81ff">0</span>]].<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">value</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">acc</span>;
+</span></span><span style="display:flex;"><span>}, {});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">grouped</span>);
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>&gt; Object { o: Array [&#34;one&#34;], t: Array [&#34;two&#34;, &#34;three&#34;], f: Array [&#34;four&#34;, &#34;five&#34;] }
+</span></span></code></pre></div><p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://www.robinwieruch.de/javascript-groupby">https://www.robinwieruch.de/javascript-groupby</a></li>
+</ul></p>
+                
+              </div>
+            
+          
+            
+            
+            
+            
+              <div class="item cpp-unreal">
+                  .
+              </div>
+            
+          
+          </div>
+        
+      
+        
+        
+        
+        
+        
         <h3 class="title is-3 is-spaced pt-6" id=5-string>5. string</h3>
         
           
@@ -705,7 +834,16 @@
             
             
               <div class="item python">
-                  .
+                <p><a href="https://syntax-compare.github.io/compare/python/5.1.string-template/">python</a></p>
+                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;The value of pi is approximately </span><span style="color:#e6db74">{</span>math<span style="color:#f92672">.</span>pi<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">.&#39;</span>)
+</span></span><span style="display:flex;"><span>The value of pi <span style="color:#f92672">is</span> approximately <span style="color:#ae81ff">3.142</span><span style="color:#f92672">.</span>
+</span></span></code></pre></div><p><strong>Reference</strong></p>
+<ul>
+<li><a href="https://mechurak.github.io/ko/posts/python/2020-11-29_f-string/">https://mechurak.github.io/ko/posts/python/2020-11-29_f-string/</a></li>
+<li><a href="https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals">https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals</a></li>
+</ul></p>
+                
               </div>
             
           
@@ -813,14 +951,14 @@
         
         
         
-        <h3 class="title is-3 is-spaced pt-6" id=6-collections>6. collections</h3>
+        <h3 class="title is-3 is-spaced pt-6" id=6-class>6. class</h3>
         
           
           
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=61-filter>6.1. filter</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=61-class-overall>6.1. class overall</h4>
           
           <div class="subsection">
           
@@ -847,16 +985,7 @@
             
             
               <div class="item javascript">
-                <p><a href="https://syntax-compare.github.io/compare/javascript/6.1.filter/">javascript</a></p>
-                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;apple&#34;</span>, <span style="color:#e6db74">&#34;banana&#34;</span>, <span style="color:#e6db74">&#34;mango&#34;</span>];
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">filter</span>((<span style="color:#a6e22e">fruit</span>) =&gt; <span style="color:#a6e22e">fruit</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>);
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">result</span>);
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>&gt; Array [&#34;banana&#34;]
-</span></span></code></pre></div><p><strong>Reference</strong></p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</a></li>
-</ul></p>
-                
+                  .
               </div>
             
           
@@ -876,87 +1005,7 @@
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=62-groupby>6.2. groupby</h4>
-          
-          <div class="subsection">
-          
-            
-            
-            
-            
-              <div class="item python">
-                  .
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item kotlin">
-                <p><a href="https://syntax-compare.github.io/compare/kotlin/6.2.groupby/">kotlin</a></p>
-                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> numbers = listOf(<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>, <span style="color:#e6db74">&#34;five&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> grouped = numbers.groupBy { number <span style="color:#f92672">-&gt;</span> number[<span style="color:#ae81ff">0</span>] }  <span style="color:#75715e">// 첫 글자로 그룹핑
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>println(grouped)
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>{o=[one], t=[two, three], f=[four, five]}
-</span></span></code></pre></div><p><strong>Reference</strong></p>
-<ul>
-<li><a href="https://kotlinlang.org/docs/collection-grouping.html">https://kotlinlang.org/docs/collection-grouping.html</a></li>
-</ul></p>
-                
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item javascript">
-                <p><a href="https://syntax-compare.github.io/compare/javascript/6.2.groupby/">javascript</a></p>
-                <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;one&#34;</span>, <span style="color:#e6db74">&#34;two&#34;</span>, <span style="color:#e6db74">&#34;three&#34;</span>, <span style="color:#e6db74">&#34;four&#34;</span>, <span style="color:#e6db74">&#34;five&#34;</span>];
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">grouped</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">numbers</span>.<span style="color:#a6e22e">reduce</span>((<span style="color:#a6e22e">acc</span>, <span style="color:#a6e22e">value</span>) =&gt; {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">acc</span>[<span style="color:#a6e22e">value</span>[<span style="color:#ae81ff">0</span>]]) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">acc</span>[<span style="color:#a6e22e">value</span>[<span style="color:#ae81ff">0</span>]] <span style="color:#f92672">=</span> [];
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">acc</span>[<span style="color:#a6e22e">value</span>[<span style="color:#ae81ff">0</span>]].<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">value</span>);
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">acc</span>;
-</span></span><span style="display:flex;"><span>}, {});
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">grouped</span>);
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-output.txt" data-lang="output.txt"><span style="display:flex;"><span>&gt; Object { o: Array [&#34;one&#34;], t: Array [&#34;two&#34;, &#34;three&#34;], f: Array [&#34;four&#34;, &#34;five&#34;] }
-</span></span></code></pre></div><p><strong>Reference</strong></p>
-<ul>
-<li><a href="https://www.robinwieruch.de/javascript-groupby">https://www.robinwieruch.de/javascript-groupby</a></li>
-</ul></p>
-                
-              </div>
-            
-          
-            
-            
-            
-            
-              <div class="item cpp-unreal">
-                  .
-              </div>
-            
-          
-          </div>
-        
-      
-        
-        
-        
-        
-        
-        <h3 class="title is-3 is-spaced pt-6" id=7-object-management>7. object management</h3>
-        
-          
-          
-          
-          
-          
-          <h4 class="subtitle is-4 pl-4 pt-4" id=71-constructor>7.1. constructor</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=62-constructor>6.2. constructor</h4>
           
           <div class="subsection">
           
@@ -992,7 +1041,7 @@
             
             
               <div class="item cpp-unreal">
-                <p><a href="https://syntax-compare.github.io/compare/cpp-unreal/7.1.constructor/">cpp-unreal</a></p>
+                <p><a href="https://syntax-compare.github.io/compare/cpp-unreal/6.2.constructor/">cpp-unreal</a></p>
                 <p><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>UCLASS()
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ARENABATTLE_API</span> AFountain : <span style="color:#66d9ef">public</span> AActor
 </span></span><span style="display:flex;"><span>{
@@ -1038,7 +1087,7 @@
           
           
           
-          <h4 class="subtitle is-4 pl-4 pt-4" id=72-spawn>7.2. spawn</h4>
+          <h4 class="subtitle is-4 pl-4 pt-4" id=63-spawn>6.3. spawn</h4>
           
           <div class="subsection">
           

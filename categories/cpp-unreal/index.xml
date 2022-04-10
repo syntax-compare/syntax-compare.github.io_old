@@ -51,11 +51,11 @@
     </item>
     
     <item>
-      <title>7.1. constructor</title>
-      <link>https://syntax-compare.github.io/compare/cpp-unreal/7.1.constructor/</link>
+      <title>6.2. constructor</title>
+      <link>https://syntax-compare.github.io/compare/cpp-unreal/6.2.constructor/</link>
       <pubDate>Fri, 03 Dec 2021 09:15:19 +0900</pubDate>
       
-      <guid>https://syntax-compare.github.io/compare/cpp-unreal/7.1.constructor/</guid>
+      <guid>https://syntax-compare.github.io/compare/cpp-unreal/6.2.constructor/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UCLASS()
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ARENABATTLE_API&lt;/span&gt; AFountain : &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; AActor
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
