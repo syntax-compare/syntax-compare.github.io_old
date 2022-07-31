@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dart on Syntax Compare</title>
+    <link>https://syntax-compare.github.io/categories/dart/</link>
+    <description>Recent content in dart on Syntax Compare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Jul 2022 21:44:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/dart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1. coding convention</title>
+      <link>https://syntax-compare.github.io/compare/dart/1.1.coding-convention/</link>
+      <pubDate>Sun, 31 Jul 2022 21:44:00 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/compare/dart/1.1.coding-convention/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dart.dev/guides/language/effective-dart/style&#34;&gt;Effective Dart: Style&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

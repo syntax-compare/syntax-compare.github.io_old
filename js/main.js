@@ -6,12 +6,14 @@ const pythonContents = document.querySelectorAll(".python");
 const kotlinContents = document.querySelectorAll(".kotlin");
 const jsContents = document.querySelectorAll(".javascript");
 const unrealContents = document.querySelectorAll(".cpp-unreal");
+const dartContents = document.querySelectorAll(".dart");
 
 const langMap = new Map();
 langMap.set("python", pythonContents);
 langMap.set("kotlin", kotlinContents);
 langMap.set("javascript", jsContents);
 langMap.set("cpp-unreal", unrealContents);
+langMap.set("dart", dartContents);
 
 function removeItem(arr, item) {
   return arr.filter((f) => f !== item);

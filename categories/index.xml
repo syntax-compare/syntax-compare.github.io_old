@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Syntax Compare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 23:00:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 21:44:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dart</title>
+      <link>https://syntax-compare.github.io/categories/dart/</link>
+      <pubDate>Sun, 31 Jul 2022 21:44:00 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/categories/dart/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>python</title>
       <link>https://syntax-compare.github.io/categories/python/</link>

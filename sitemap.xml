@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://syntax-compare.github.io/compare/python/5.1.string-template/</loc>
-    <lastmod>2022-04-10T23:00:00+09:00</lastmod>
+    <loc>https://syntax-compare.github.io/compare/dart/1.1.coding-convention/</loc>
+    <lastmod>2022-07-31T21:44:00+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/categories/</loc>
-    <lastmod>2022-04-10T23:00:00+09:00</lastmod>
+    <lastmod>2022-07-31T21:44:00+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/compare/</loc>
+    <lastmod>2022-07-31T21:44:00+09:00</lastmod>
+  </url><url>
+    <loc>https://syntax-compare.github.io/categories/dart/</loc>
+    <lastmod>2022-07-31T21:44:00+09:00</lastmod>
+  </url><url>
+    <loc>https://syntax-compare.github.io/compare/python/5.1.string-template/</loc>
     <lastmod>2022-04-10T23:00:00+09:00</lastmod>
   </url><url>
     <loc>https://syntax-compare.github.io/categories/python/</loc>

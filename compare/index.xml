@@ -6,7 +6,18 @@
     <description>Recent content in Compares on Syntax Compare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 23:00:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/compare/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 21:44:00 +0900</lastBuildDate><atom:link href="https://syntax-compare.github.io/compare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1.1. coding convention</title>
+      <link>https://syntax-compare.github.io/compare/dart/1.1.coding-convention/</link>
+      <pubDate>Sun, 31 Jul 2022 21:44:00 +0900</pubDate>
+      
+      <guid>https://syntax-compare.github.io/compare/dart/1.1.coding-convention/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dart.dev/guides/language/effective-dart/style&#34;&gt;Effective Dart: Style&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>5.1. string template</title>
       <link>https://syntax-compare.github.io/compare/python/5.1.string-template/</link>
